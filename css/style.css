@@ -10,6 +10,7 @@
   --color-body: #918ca4;
 }
 
+/* TOPOGRAPHY */
 html {
   font-size: 62.5%;
 }
@@ -90,5 +91,44 @@ a {
 @media screen and (min-width: 1024px) {
   .link-arrow {
     font-size: 1.5rem;
+  }
+}
+
+/* BADGES */
+
+.badge {
+  border-radius: 20px;
+  padding: 0.5rem 2rem;
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.badge--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.badge--secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.badge--accent {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.badge--small {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+
+  .badge--small {
+    font-size: 1.2rem;
   }
 }
