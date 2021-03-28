@@ -164,6 +164,7 @@ a {
   }
 }
 
+/* ICON */
 .icon {
   width: 40pxx;
   height: 40px;
@@ -183,6 +184,7 @@ a {
   align-items: center;
 }
 
+/* BUTTON */
 .btn {
   border-radius: 40px;
   border: none;
@@ -244,6 +246,7 @@ a {
   }
 }
 
+/* INPUT */
 .input {
   padding: 2rem 3rem;
   border-radius: 40px;
@@ -277,5 +280,88 @@ a {
 @media screen and (min-width: 1024px) {
   .input {
     font-size: 1.5rem;
+  }
+}
+
+/* CARD */
+
+.card {
+  border-radius: 8px;
+  box-shadow: 0 0 9px 1px var(--color-border);
+  overflow: hidden;
+}
+
+.card__header,
+.card__body {
+  padding: 2rem 3rem;
+}
+
+.card--primary .card__header {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.card--secondary .card__header {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+/* PLAN */
+
+.plan__name {
+  color: #fff;
+  font-weight: 500;
+  margin: 0;
+}
+
+.plan__price {
+  font-size: 6rem;
+}
+
+.plan__duration {
+  font-size: 2.4rem;
+  font-weight: 300;
+  opacity: 0.8;
+  margin-right: 1.5rem;
+}
+
+.plan__discount {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.plan__discount,
+.badge,
+.badge--secondary {
+  background: #03d2ee;
+}
+
+.plan__description {
+  display: block;
+  font-weight: 400;
+  letter-spacing: 1.5;
+  margin-top: 5px;
+}
+
+.plan .list__item {
+  margin-bottom: 2.5rem;
+  letter-spacing: 2;
+}
+
+@media screen and (min-width: 1024px) {
+  .plan__name {
+    font-size: 1.4rem;
+  }
+
+  .plan__price {
+    font-size: 5rem;
+  }
+
+  .plan__duration {
+    font-size: 1.6rem;
+  }
+
+  .plan__description {
+    font-size: 1.7rem;
   }
 }
