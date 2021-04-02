@@ -10,6 +10,7 @@
   --color-accent: #ff3400;
   --color-heading: #1b0760;
   --color-body: #918ca4;
+  --color-body-darker: #5c5577;
   --color-border: #ccc;
 }
 
@@ -398,4 +399,46 @@ a {
 
 .media__title {
   margin: 0 0 1.5rem 0;
+}
+
+/* QUOTE */
+.quote {
+  font-size: 3rem;
+  font-style: italic;
+  color: var(--color-body-darker);
+}
+
+.quote__text::before {
+  content: open-quote;
+}
+
+.quote__text::after {
+  content: close-quote;
+}
+
+.quote__author {
+  font-style: normal;
+  margin-bottom: 0;
+}
+
+.company__name {
+  font-style: normal;
+  color: var(--color-heading);
+  font-size: 2rem;
+  opacity: 0.4;
+}
+
+.quote__line {
+  position: relative;
+  bottom: 8px;
+}
+
+@media screen and (min-width: 1024px) {
+  .quote__author {
+    font-size: 2.4rem;
+  }
+
+  .company__name {
+    font-size: 1.6rem;
+  }
 }
