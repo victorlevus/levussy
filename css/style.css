@@ -688,6 +688,7 @@ a {
 
 .hero__image {
   width: 100%;
+  margin-left: 5rem;
 }
 
 @media screen and (min-width: 768px) {
