@@ -756,3 +756,23 @@ a {
 .block-plans .card:hover {
   transform: scale(1.05);
 }
+
+/* feature */
+.feature {
+  gap: 4rem 2rem;
+  margin: 8rem 0;
+}
+
+.feature:first-of-type {
+  margin: 4rem;
+}
+
+.feature__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
+}
